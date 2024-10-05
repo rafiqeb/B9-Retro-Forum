@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,13 +11,43 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
+
 <body>
-    <header>
-        <nav class="w-11/12 mx-auto flex justify-between">
-            <div>Scooby</div>
-            <div>button</div>
+    <header class="w-11/12 mx-auto">
+        <nav class="flex justify-center items-center mt-5 w-[400px]">
+            <label class="input input-bordered flex items-center gap-2">
+                <input id="search" type="text" class="grow" placeholder="Search" />
+                <button onclick="searchCategory()" class="badge badge-info">Search</button>
+            </label>
         </nav>
     </header>
-    
+
+    <main>
+        <section class="w-11/12 mx-auto">
+            <div id="post-container" class="mt-10 w-8/12">
+            
+            </div>
+        </section>
+
+        <section class="w-11/12 mx-auto">
+            <div id="title-card">
+                <!-- <div class="card bg-base-100 w-96 shadow-xl">
+                    <div class="card-body">
+                      <div class="flex justify-between items-center">
+                        <h2 class="card-title">Card title!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                      </div>
+                      <div class="flex justify-between items-center">
+                        <p>It is one thing to subject yourself to a costume mishap</p>
+                        <p>1568</p>
+                      </div>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
